@@ -1,4 +1,6 @@
 const cats = [
+  //our dummy API-data
+  //an array of objects, each with 7 key/value pairs
   {
     id: '1',
     name: 'Felix',
@@ -72,5 +74,5 @@ const cats = [
     isSidekick: true,
   },
 ];
-
+//which we export as "cats"
 module.exports = { cats };

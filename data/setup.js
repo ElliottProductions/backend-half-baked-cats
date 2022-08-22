@@ -1,5 +1,8 @@
 const fs = require('fs').promises;
-
+//this code lets us know what happens when we try and setup our database.
+//it reads the setup.sql files and then (encoding: something? No clue)
+//it takes our "pool" variable as an argument
+//it prints the success message if the database is set up!
 module.exports = (pool) => {
   return fs
     .readFile(`${__dirname}/../sql/setup.sql`, { encoding: 'utf-8' })
